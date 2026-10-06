@@ -1,0 +1,16 @@
+{
+  "name": "sohni-bakers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sohni Bakers — homemade bakery e-commerce website (cakes, brownies, donuts) for Punjab, Pakistan.",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "admin:create": "node --disable-warning=ExperimentalWarning scripts/create-admin.js",
+    "catalog:sync": "node --disable-warning=ExperimentalWarning scripts/sync-catalog.js",
+    "images:generate": "node scripts/generate-images.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"tests/*.test.js\""
+  }
+}
